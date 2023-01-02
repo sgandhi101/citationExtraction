@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!-- Include the Bootstrap CSS from a CDN -->
+
+<form method="POST" enctype="multipart/form-data" class="text-center">
+    <!-- Use the text-center class from Bootstrap to center the form -->
+    <div class="form-group">
+        <!-- Use the form-group and form-control-file classes from Bootstrap to style the form elements -->
+        <label for="file" class="h3">Select a .docx file:</label>
+        <!-- Use the h3 class from Bootstrap to style the label -->
+        <br><br>
+        <!-- Add some vertical space between the label and the input field -->
+        <input type="file" class="center" class="form-control-file" id="file" name="file" required>
+        <!-- Use the form-control-file class from Bootstrap to style the file input field -->
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg">Extract Footnotes</button>
+    <!-- Use the btn and btn-primary classes from Bootstrap to style the submit button -->
+</form>

@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!-- Include the Bootstrap CSS from a CDN -->
+
+<h1 class=" text-center mb-5">Footnotes</h1>
+<!-- Use the text-center and mb-5 classes from Bootstrap to center and add margin to the heading -->
+
+<ol>
+    {% set counter = 0 %}
+    <!-- Initialize a counter variable to 0 -->
+    {% for footnote in footnotes %}
+    {% set counter = counter + 1 %}
+    <!-- Increment the counter variable by 1 -->
+    {% if counter % 2 == 1 %}
+    <!-- If the counter is odd, display the footnote -->
+    <li>{{ footnote }}</li>
+    {% endif %}
+    {% endfor %}
+</ol>
+<!-- Use an ordered list to display the footnotes -->
